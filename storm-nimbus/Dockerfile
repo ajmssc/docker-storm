@@ -1,5 +1,5 @@
-FROM wurstmeister/storm:0.9.4
-MAINTAINER Wurstmeister
+FROM gschmutz/storm:0.9.4
+MAINTAINER Guido Schmutz
 
 RUN /usr/bin/config-supervisord.sh nimbus 
 RUN /usr/bin/config-supervisord.sh drpc
