@@ -1,5 +1,5 @@
-storm-docker
-============
+storm-docker-titan
+==================
 
 Dockerfiles for building a storm cluster. Inspired by [https://github.com/ptgoetz/storm-vagrant](https://github.com/ptgoetz/storm-vagrant)
 
@@ -32,7 +32,7 @@ Add more supervisors:
 Take a look at fig.yml:
 
     ui:
-      image: wurstmeister/storm-ui:0.9.2
+      image: gschmutz/storm-ui:0.9.2
 	      ports:
 	        - "49080:8080"
     
