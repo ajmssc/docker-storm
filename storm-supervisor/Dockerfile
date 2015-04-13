@@ -1,5 +1,5 @@
 FROM gschmutz/storm:0.9.4
-MAINTAINER Wurstmeister
+MAINTAINER Guido Schmutz
 
 EXPOSE 6700
 EXPOSE 6701
