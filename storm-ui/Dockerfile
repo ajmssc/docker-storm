@@ -1,5 +1,5 @@
-FROM wurstmeister/storm:0.9.4
-MAINTAINER Wurstmeister
+FROM gschmutz/storm:0.9.4
+MAINTAINER Guido Schmutz
 RUN /usr/bin/config-supervisord.sh ui
 
 EXPOSE 8080
