@@ -1,6 +1,6 @@
 FROM wurstmeister/base
 
-MAINTAINER Wurstmeister 
+MAINTAINER guido.schmutz@trivadis.com 
 
 RUN wget -q -O - http://mirrors.sonic.net/apache/storm/apache-storm-0.9.4/apache-storm-0.9.4.tar.gz | tar -xzf - -C /opt
 
