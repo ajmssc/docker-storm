@@ -1,4 +1,4 @@
-FROM wurstmeister/base
+FROM gschmutz/docker-base
 
 MAINTAINER guido.schmutz@trivadis.com 
 
