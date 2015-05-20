@@ -1,4 +1,4 @@
-FROM gschmutz/storm-base
+FROM gschmutz/storm-base:0.9.4
 
 MAINTAINER guido.schmutz@trivadis.com 
 
