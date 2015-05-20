@@ -1,4 +1,4 @@
-FROM gschmutz/docker-base
+FROM gschmutz/storm-base
 
 MAINTAINER guido.schmutz@trivadis.com 
 
