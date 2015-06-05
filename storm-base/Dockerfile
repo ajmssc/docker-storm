@@ -2,7 +2,7 @@ FROM java:8
 
 MAINTAINER guido.schmutz@trivadis.com 
  
-RUN apt-get update; apt-get install -y unzip wget supervisor docker.io openssh-server
+RUN apt-get update; apt-get install -y unzip wget supervisor openssh-server
 
 RUN echo 'root:schmutz' | chpasswd
 RUN mkdir /var/run/sshd
