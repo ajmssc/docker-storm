@@ -1,6 +1,6 @@
 zookeeper:
-  image: gschmutz/zookeeper
-  ports: 
+  image: wurstmeister/zookeeper
+  ports:
     - "49181:2181"
     - "22"
 nimbus:
@@ -10,14 +10,14 @@ nimbus:
     - "49772:3772"
     - "49627:6627"
     - "22"
-  links: 
+  links:
     - zookeeper:zk
 supervisor:
   image: gschmutz/storm-supervisor
   ports:
     - "8000"
     - "22"
-  links: 
+  links:
     - nimbus:nimbus
     - zookeeper:zk
 ui:
@@ -25,6 +25,6 @@ ui:
   ports:
     - "49080:8080"
     - "22"
-  links: 
+  links:
     - nimbus:nimbus
     - zookeeper:zk
