@@ -13,15 +13,15 @@ The images are available directly from [https://index.docker.io](https://index.d
 
 Start a cluster:
 
-- ```fig up```
+- ```docker-compose up```
 
 Destroy a cluster:
 
-- ```fig stop```
+- ```docker-compose stop```
 
 Add more supervisors:
 
-- ```fig scale supervisor=3```
+- ```docker-compose scale supervisor=3```
 
 ##Building
 
