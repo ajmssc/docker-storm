@@ -1,4 +1,4 @@
-FROM gschmutz/storm:0.9.4
+FROM gschmutz/storm:0.9.5
 MAINTAINER Guido Schmutz
 
 EXPOSE 6700
