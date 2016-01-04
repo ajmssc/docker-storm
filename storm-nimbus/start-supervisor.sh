@@ -4,4 +4,9 @@ sed -i -e "s/%nimbus%/$IP/g" $STORM_HOME/conf/storm.yaml
 
 echo "storm.local.hostname: `hostname -i`" >> $STORM_HOME/conf/storm.yaml
 
-/usr/sbin/sshd && supervisord
+until nc -z $ZK_PORT_2181_TCP_ADDR 2181; do
+    echo "$(date) - waiting for zookeeper..."
+    sleep 1
+done
+
+supervisord
